@@ -12,7 +12,7 @@ class HomeLayout extends React.Component {
     return (
       <div>
         <header className={style.header}>
-          <Link to="/">ReactManager</Link>
+          <Link to="/home">ReactManager</Link>
           
         </header>
 
@@ -34,6 +34,12 @@ class HomeLayout extends React.Component {
                 </MenuItem>
                 <MenuItem key="book-add">
                   <Link to="/book/add">添加图书</Link>
+                </MenuItem>
+              </SubMenu>
+
+              <SubMenu key="test" title={<span><Icon type="test"/><span>Redux</span></span>}>
+                <MenuItem key="test">
+                  <Link to="/test">React-Redux</Link>
                 </MenuItem>
               </SubMenu>
             </Menu>

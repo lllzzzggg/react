@@ -14,12 +14,13 @@ class BookList extends React.Component {
   static contextTypes = {
     router: PropTypes.object.isRequired
   };
-  componentWillMount(){
+  componentDidMount(){
     get('http://localhost:3000/book')
       .then(res => {
         this.setState({
           BookList:res
         }) 
+        console.log(res.length)
       })
   }
 
@@ -56,7 +57,7 @@ class BookList extends React.Component {
       {
         title: '价格',
         dataIndex: 'price',
-        render: (text, record) => <span>&yen;{record.price / 100}</span>
+        render: (text, record) => <span>&yen;{record.price}</span>
       },
       {
         title: '所有者ID',

@@ -33,7 +33,7 @@ class BookEditor extends React.Component {
         if (editTarget) {
           form.setFieldsValue(editTarget);
         }
-      }
+    }
     static contextTypes = {
         router: PropTypes.object.isRequired
     };

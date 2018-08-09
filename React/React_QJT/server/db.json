@@ -25,7 +25,7 @@
       "id": 10005
     },
     {
-      "name": "eee",
+      "name": "wewe",
       "age": 21,
       "gender": "male",
       "id": 10006
@@ -33,26 +33,32 @@
   ],
   "book": [
     {
-      "id": 10000,
       "name": "JavaScript从入门到精通",
       "price": 9990,
-      "owner_id": 10000
+      "owner_id": 10000,
+      "id": 10000
     },
     {
-      "id": 10001,
       "name": "Java从入门到放弃",
-      "price": 9990,
-      "owner_id": 10001
+      "price": 9999,
+      "owner_id": 10001,
+      "id": 10001
     },
     {
       "name": "Node从入门到入坑",
-      "price": 99999,
+      "price": 122,
       "owner_id": "1",
       "id": 10002
+    },
+    {
+      "name": "koa",
+      "price": 1111,
+      "owner_id": "1",
+      "id": 10003
     }
   ],
   "login": {
     "account": "admin",
-    "password": "123456"
+    "password": "12"
   }
 }

@@ -8,6 +8,7 @@
 //     <App />, 
 //     document.getElementById('root'));
 // registerServiceWorker();
+
 import React, {Component, PropTypes} from 'react';
 import ReactDOM, {render} from 'react-dom';
 import store from './react-redux/store'
