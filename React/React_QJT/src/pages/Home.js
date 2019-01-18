@@ -3,9 +3,10 @@ import style from '../styles/home_page.less';
 
 class App extends Component {
   render() {
+    const name = 'React'
     return (
         <div className={style.welcome}>
-            Welcome
+            Welcome {name}
         </div> 
     );
   }

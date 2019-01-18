@@ -1,8 +1,10 @@
+import "babel-polyfill"
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import store from './react-redux/Store.js'
 import { BrowserRouter, HashRouter, Route ,Link, Switch} from 'react-router-dom';
+
 import UserAddPage from './pages/UserAdd'
 import UserListPage from './pages/UserList'
 import UserEditPage from './pages/UserEdit'
@@ -13,6 +15,7 @@ import test from './react-redux/ControlPanel'
 import Login from './pages/Login'
 import Home from './pages/Home';
 import HomeLayout from './layouts/HomeLayout';
+import store from './react-redux/Store.js'
 
 const routerDom = (
     <Provider store={store}>
@@ -21,7 +24,7 @@ const routerDom = (
             <Route exact path="/" component={Login}/>
                 <HomeLayout>
                     <Switch>
-                        <Route exact path="/home" component={Home}/>
+                        <Route path="/home" component={Home}/>
                         <Route path="/user/add" component={UserAddPage} />
                         <Route path="/user/list" component={UserListPage} />
                         <Route path="/user/edit/:id" component={UserEditPage}/>

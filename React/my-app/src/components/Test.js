@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class Child extends React.Component{
   constructor(props){
@@ -13,7 +13,7 @@ class Child extends React.Component{
       value:e.target.value
     })
     let val = e.target.value
-    val = val.replace(/[^0-9|a-z|A-Z|\@|\.]/ig,"")
+    val = val.replace(/[^0-9|a-z|A-Z|@|.]/ig,"")
     this.props.emallChange(val)
   }
   render(){
